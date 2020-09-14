@@ -135,6 +135,7 @@ div#left ul {
     width: 555px;
     height: 145px;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 div#left ul li {
@@ -144,13 +145,18 @@ div#left ul li {
     border-bottom: 1px dotted #928e8a;
     line-height: 32px;
     margin-bottom: 10px;
+    display: flex;
 }
 
-div#left ul li span {
+div#left ul li div.date {
+    min-width: 80px;
     font-size: 12px;
     font-weight: normal;
     color: #b5b3b3;
-    margin-right: 10px;
+}
+
+div#left ul li div.messages {
+    padding-right: 10px;
 }
 
 
