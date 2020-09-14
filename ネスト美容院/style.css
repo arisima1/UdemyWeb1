@@ -238,3 +238,86 @@ div#left dl dd {
 div#left dl dd:last-child {
     margin-bottom: 0px;
 }
+
+
+/* コンタクトページ */
+
+p#contact_text {
+    color: #927e7a;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #ffefea;
+    border: 1px solid #eeddda;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    border: 1px solid lightslategray;
+}
+
+input:hover,
+textarea:hover {
+    box-shadow: 0px 0px 2px 2px lightskyblue;
+}
+
+form tr {
+    display: block;
+    margin-bottom: 5px;
+}
+
+td.form_title {
+    width: 131px;
+    height: 32px;
+    font-size: 15px;
+    color: #734339;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+td.form_contents input#form_name,
+td.form_contents input#form_tel {
+    width: 421px;
+    height: 22px;
+}
+
+td.form_contents input.form_time {
+    width: 47px;
+    height: 22px;
+    margin-right: 2px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+td.form_contents {
+    font-size: 13px;
+    color: #a6a6a6;
+}
+
+td.form_contents textarea {
+    width: 421px;
+    height: 83px;
+    resize: vertical;
+    border: 1px solid #a6a6a6;
+}
+
+input#submit {
+    background-color: #325a37;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    width: 136px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 auto;
+}
+
+input#submit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

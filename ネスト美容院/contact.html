@@ -36,35 +36,82 @@
 
         <!-- heading image start-->
         <h2 id="heading" class="box-shadow">
-            メニュー一覧
+            ご予約・お問合せ
         </h2>
         <!-- heading end -->
 
         <!-- left start -->
         <div id="main">
             <div id="left" class="box-shadow">
-                <h3>Basic Menu</h3>
-                <dl>
-                    <dt>Cut</dt>
-                    <dd>
-                        一般　　　　・・・・・・・・・・・・・・・・・・・・1,000 円<br> 学生　　　　・・・・・・・・・・・・・・・・・・・・1,000 円<br> 小学生以下　・・・・・・・・・・・・・・・・・・・・1,000 円<br>
-                    </dd>
-                    <dt>Cut</dt>
-                    <dd>
-                        一般　　　　・・・・・・・・・・・・・・・・・・・・1,000 円<br> 学生　　　　・・・・・・・・・・・・・・・・・・・・1,000 円<br> 小学生以下　・・・・・・・・・・・・・・・・・・・・1,000 円<br>
-                    </dd>
-                    <dt>Cut</dt>
-                    <dd>
-                        一般　　　　・・・・・・・・・・・・・・・・・・・・1,000 円<br> 学生　　　　・・・・・・・・・・・・・・・・・・・・1,000 円<br> 小学生以下　・・・・・・・・・・・・・・・・・・・・1,000 円<br>
-                    </dd>
-                </dl>
+                <h3>ご予約・お問合せフォーム</h3>
+                <p id="contact_text">
+                    下記お問合せフォームよりあああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ<br> ああああああああああああああああああああああああああああああああああ
+                </p>
+                <form action="#" method="post">
+                    <table>
+                        <tr>
+                            <td class="form_title">
+                                <label for="form_name">お名前</label>
+                            </td>
+                            <td class="form_contents">
+                                <input type="text" id="form_name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form_title">
+                                <label for="form_tel">お電話番号</label>
+                            </td>
+                            <td class="form_contents">
+                                <input type="text" id="form_tel">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form_title">
+                                <label for="form_time">ご希望日時</label>
+                            </td>
+                            <td class="form_contents">
+                                <input type="text" class="form_time">年
+                                <input type="text" class="form_time">月
+                                <input type="text" class="form_time">日
+                                <input type="text" class="form_time">時から
+                                <input type="text" class="form_time">時まで
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form_title">
+                                <label for="form_menu">ご希望メニュー</label>
+                            </td>
+                            <td class="form_contents">
+                                <label for="menu-cut">
+                                    <input type="checkbox" id="menu-cut" value="カット">カット
+                                </label>
+                                <label for="menu-color">
+                                    <input type="checkbox" id="menu-color" value="カラー">カラー
+                                </label>
+                                <label for="menu-perm">
+                                    <input type="checkbox" id="menu-perm" value="パーマ">パーマ
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form_title">
+                                <label for="form_textarea">お客様ご要望欄</label>
+                            </td>
+                            <td class="form_contents">
+                                <textarea id="form_contents" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <input type="submit" id="submit" value="送信する">
+                </form>
             </div>
             <!-- left end -->
 
             <!-- right start -->
             <div id="right">
                 <ul>
-                    <li><a class="box-shadow" id="contact" href="#">ご予約お問合せ</a></li>
+                    <!-- <li><a class="box-shadow" id="contact" href="#">ご予約お問合せ</a></li> -->
                     <li><a class="box-shadow" id="blog" href="#">スタイリストブログ</a></li>
                 </ul>
             </div>
