@@ -8,7 +8,8 @@ body {
 
 a:hover {
     color: #f6ac4d;
-    border-bottom: 2px solid #f6ac4d
+    border-bottom: 2px solid #f6ac4d;
+    text-decoration: none;
 }
 
 .box_shadow {
@@ -17,8 +18,8 @@ a:hover {
 
 
 /* ----------------------------------------
-header
----------------------------------------- */
+er
+------------------------------------ */
 
 header {
     width: 100%;
@@ -58,23 +59,24 @@ nav ul li:last-child {
 
 
 /* ----------------------------------------
-wrapper
----------------------------------------- */
+per
+------------------------------------ */
 
 div#wrapper {
     margin: 20px auto 0 auto;
     width: 960px;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
 /* ----------------------------------------
-top_pickup
----------------------------------------- */
+pickup
+------------------------------------ */
 
 div#top_pickup {
-    width: 582px;
+    width: 590px;
     height: 360px;
     background-color: #fff;
     margin-right: 20px;
@@ -126,16 +128,357 @@ div#top_pickup dl dd {
     color: #dcdddf;
     margin-bottom: 10px;
     line-height: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px dotted #767676;
 }
 
 
 /* ----------------------------------------
-top_ranking
----------------------------------------- */
+ranking
+------------------------------------ */
 
 div#top_ranking {
-    width: 348px;
-    height: 360px;
+    width: 350px;
+    max-height: 360px;
+    border: 1px solid #dcdddf;
+    background-color: #fff;
+}
+
+div#top_ranking h2 {
+    font-size: 15px;
+    font-weight: bold;
+    background: url(images/popular_icon.png) no-repeat;
+    margin: 5px 0 0 5px;
+    padding-left: 37px;
+    line-height: 30px;
+}
+
+div#top_ranking ul {
+    border-top: 2px solid #dcdddf;
+}
+
+div#top_ranking ul li {
+    margin-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+}
+
+div#top_ranking ul li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+div#top_ranking ul li dl dt {
+    position: relative;
+}
+
+span.ranking_number {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #434343;
+    color: #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div#top_ranking ul li dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#top_ranking ul li dd:nth-child(2n) {
+    flex-basis: 50%;
+}
+
+div#top_ranking ul li dd {
+    height: auto;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+div#top_ranking ul li dl dd h3 a {
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div#top_ranking ul li dl dd h3 a:hover {
+    border-bottom-style: none
+}
+
+span.ranking_tag {
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 3px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+span.webdesign {
+    background-color: #f6ac4d;
+}
+
+span.wordpress {
+    background-color: #e18c7c;
+}
+
+span.webmarketing {
+    background-color: #acd598;
+}
+
+
+/* ----------------------------------------
+innerwrapper
+------------------------------------ */
+
+div#top_innerwrapper {
+    display: flex;
+    height: auto;
+}
+
+
+/* ----------------------------------------
+left
+------------------------------------ */
+
+div#top_left {
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+/* ----------------------------------------
+category
+------------------------------------ */
+
+div#top_category {
+    width: 280px;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 5px solid #ccc;
+    margin-bottom: 20px;
+}
+
+div#top_category h3 {
+    font-size: 18px;
+    font-weight: bold;
+    background: url(images/category_icon.png) no-repeat;
+    background-position: left 5px;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #898989;
+}
+
+div#top_category ul li {
+    font-size: 13px;
+    margin-bottom: 19px;
+    line-height: 1;
+}
+
+div#top_category ul li a {
+    border-bottom: none;
+}
+
+div#top_category ul li:last-child {
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+
+/* ----------------------------------------
+right
+------------------------------------ */
+
+div#top_right {
+    width: 660px;
+    height: auto;
+    margin-top: 30px;
+}
+
+div#top_right h3 {
+    font-size: 22px;
+    font-weight: bold;
+    background: url(images/new_icon.png) no-repeat;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+div#top_right li {
+    margin-bottom: 15px;
+}
+
+div#top_right li dl {
+    display: flex;
+}
+
+div#top_right li dl {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+div#top_right li dl dt {
+    position: relative;
+}
+
+div#top_right li dl dt span {
+    position: absolute;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 35px;
+    top: 0px;
+    right: 0px
+}
+
+div#top_right li dl dd h4 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0 0 15px;
+    margin-bottom: 15px;
+}
+
+div#top_right li dl dd span {
+    font-size: 8px;
+    font-weight: light;
+    padding: 15px 0 0 15px;
+    margin-bottom: 5px;
+}
+
+span.date {
+    background: url(images/new_date.png) no-repeat left 17px;
+    margin-left: 15px;
+}
+
+span.keyword {
+    background: url(images/tag.png) no-repeat left 18px;
+    margin-left: 15px;
+}
+
+div#top_right li dl dd p {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 15px 0 0 15px;
+    margin-bottom: 5px;
+}
+
+div#top_right li dl dd a {
+    font-size: 8px;
+    font-weight: light;
+    color: #f6ac4d;
+    margin: 15px 0 0 15px;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+
+/* ----------------------------------------
+pagination
+------------------------------------ */
+
+div#pagination {
+    width: auto;
+    height: auto;
+    margin: 0 0 0 auto;
+    text-align: right;
+}
+
+div#pagination ul {
+    display: flex;
+}
+
+div#pagination li {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #767676;
+    display: inline-block;
+    display: block;
+    font-weight: bolder;
+}
+
+
+/* ----------------------------------------
+footer
+------------------------------------ */
+
+footer {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    border-top: 3px solid #f6ac4d;
+    margin-top: 20px;
+}
+
+div#footer_inner {
+    width: 960px;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: flex;
+}
+
+div#company {
+    margin-top: 10px;
+}
+
+div#address {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+div#contact {
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+div#contact h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#contact span {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+div#contact form textarea {
+    width: 372px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+    border: 1px solid #434343;
+}
+
+div#contact form input {
+    width: 127px;
+    height: 35px;
+    font-weight: bold;
     background-color: green;
+    border: 1px solid #434343;
+    text-align: center;
+    border: none;
+    color: #fff;
+    float: right;
+}
+
+div#contact form input:hover {
+    opacity: 0.8;
 }
